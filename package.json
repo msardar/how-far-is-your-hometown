@@ -1,0 +1,24 @@
+{
+  "name": "how-far-is-your-hometown",
+  "version": "1.0.0",
+  "description": "This project involves development of a small application which will calculate your current distance from your hometown and display a chart which depicts data trends about how many people moved from their hometowns and what is the greatest distance on the basis of data from our database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msardar/how-far-is-your-hometown.git"
+  },
+  "keywords": [
+    "hometown",
+    "distance",
+    "MEAN"
+  ],
+  "author": "Sardar Mohammed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msardar/how-far-is-your-hometown/issues"
+  },
+  "homepage": "https://github.com/msardar/how-far-is-your-hometown#readme"
+}
