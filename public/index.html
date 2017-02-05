@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="hometownApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>How Far is Your Hometown</title>
+  <meta name="description" content="Distance from Hometown and Statistics">
+  <meta name="author" content="Sardar Mohammed">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">How-Far-Is-Your-Hometown</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+        <ul class="nav navbar-nav">
+
+
+
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+  <h2>Simple MEAN stack application to calculate distance from your hometown!</h2>
+  <hr></hr>
+
+  <div>
+
+
+    <form id="hometownEntry" name="vm.hometownForm" ng-submit="vm.getDistanceAPI()">
+
+      <div class="col-lg-6 input-group">
+        <div ng-show="vm.home_town.$invalid && vm.home_town.$dirty && vm.isSubmitted">
+          <p style="color:red">Please enter an address</p>
+</div>
+<input type="text" required ng-model="vm.home_town" class="form-control" id="hometownAddress" placeholder="Please enter your city,state or zip">
+<span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+   </span>
+</div>
+</form>
+</div>
+
+<div ng-view></div>
+
+
+
+
+<script src="/public/jquery/jquery-2.1.4.min.js"></script>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script src="angular-app/hometown-address/hometown-address-controller.js"></script>
+<script src="angular-app/hometown-data-factory/hometown-data-factory.js"></script>
+<script src="angular-app/app.js"></script>
+</body>
+
+</html>

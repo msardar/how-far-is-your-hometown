@@ -2,7 +2,7 @@
   "name": "how-far-is-your-hometown",
   "version": "1.0.0",
   "description": "This project involves development of a small application which will calculate your current distance from your hometown and display a chart which depicts data trends about how many people moved from their hometowns and what is the greatest distance on the basis of data from our database.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/msardar/how-far-is-your-hometown/issues"
   },
-  "homepage": "https://github.com/msardar/how-far-is-your-hometown#readme"
+  "homepage": "https://github.com/msardar/how-far-is-your-hometown#readme",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "google-distance": "^1.0.1"
+  }
 }
