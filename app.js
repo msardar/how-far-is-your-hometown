@@ -25,7 +25,6 @@ app.use(bodyParser.json());
 
 app.get('/', function (req, res, err) {
     console.log("Get the homepage")
-
 })
 // Listen for requests
 var server = app.listen(app.get('port'), function () {
